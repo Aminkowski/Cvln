@@ -19,6 +19,7 @@ p2 :: (Fractional a, Enum a) => a -> a
 p2 x = x^2 - 1
 p1' :: (Fractional a, Enum a) => a -> a
 p1' x = 1/(x-1)
+pg x = 182*exp(-x^2)/sqrt(pi)
 
 test = rieman (-23) (-7) p2 1000
 test' = rieman 0 9 p1' 1000
